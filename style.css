@@ -505,6 +505,10 @@ footer .container .card {
     text-align: center;
     }
 
+    .hero img {
+        display: none;
+    }
+
     .hero-text {
         max-width: 90%;
     }
