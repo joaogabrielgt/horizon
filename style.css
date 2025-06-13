@@ -1,0 +1,558 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    transition: .5s;
+}
+
+header.rolagem {
+    background-color: black;
+}
+
+header a img {
+    height: 70px;
+}
+
+.logo-mobile {
+    display: none;
+}
+
+.menu-desktop ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu-desktop ul a {
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+
+.menu-desktop ul a:not(.btn-menu):hover {
+    border-bottom: 1px solid #FD1FD6;
+    color: #FD1FD6;
+}
+
+.menu-desktop .btn-menu {
+    background: linear-gradient(90deg, #7901C7, #FD1FD6);
+    padding: 10px 30px;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.menu-desktop .btn-menu:hover {
+    background: #FD1FD6;
+}
+
+.btn-abrir-menu i {
+    color: white;
+    font-size: 50px;
+}
+
+/* INICIO MENU MOBILE */
+.menu-mobile {
+    background-color: black;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 0%;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.btn-abrir-menu {
+    display: none;
+}
+
+.menu-mobile.abrir-menu {
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu {
+    display: block;
+}
+
+.menu-mobile .btn-fechar {
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar i {
+    color: white;
+    font-size: 30px;
+}
+
+.menu-mobile nav ul {
+    list-style: none;
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+    text-decoration: none;
+}
+
+.menu-mobile nav ul li a:hover {
+    background: linear-gradient(90deg, #7901C7, #FD1FD6);
+}
+
+.overlay-menu {
+    background-color: rgba(0, 0, 0, 0.479);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    display: none;
+}
+/* FINAL MENU MOBILE */
+
+/* INICIO HERO SECTION */
+.hero {
+    background-color: black;
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
+}
+
+.hero h1 {
+    color: white;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.hero p {
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.hero img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.hero-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-hero {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.btn-hero a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-contato {
+    background: linear-gradient(90deg, #7901C7, #FD1FD6);
+    padding: 10px 30px;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.btn-contato:hover {
+    background: #FD1FD6;
+}
+
+.btn-servicos {
+    border: 1px solid #FD1FD6;
+    padding: 10px 30px;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.btn-servicos:hover {
+    background: #FD1FD6;
+}
+/* FINAL HERO SECTION */
+
+/* INICIO SECTION SERVIÇOS */
+.servicos {
+    margin: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicos .container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.servicos .textos {
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 80%;
+}
+
+.servicos .card {
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    transition: .5s;
+}
+
+.servicos .card:hover {
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.servicos .card h2 {
+    margin: 10px 0px;
+}
+/* FINAL SECTION SERVIÇOS */
+
+/* INICIO SECTION SOBRE */
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+    margin-bottom: 50px;
+}
+
+.sobre .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.sobre .container img {
+    width: 600px;
+}
+
+.sobre .container .sobre-text {
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: justify;
+}
+
+.sobre .container .sobre-text .text1 h1 {
+    margin-bottom: 10px;
+}
+
+.sobre .container .sobre-text .text1 p:first-of-type {
+    margin-bottom: 10px;
+}
+
+.sobre .container .sobre-text .text2 {
+    border-left: 5px solid #7901C7;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.sobre .container .sobre-text .text2 h1 {
+    margin-bottom: 10px;
+}
+/* FINAL SECTION SOBRE */
+/*  INICIO SECTION ORÇAMENTO */
+.solicitar-orcamento {
+    background: linear-gradient(90deg, #7901C7, #FD1FD6);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.solicitar-orcamento p {
+    margin-bottom: 50px;
+}
+
+.solicitar-orcamento a {
+    text-decoration: none;
+    color: #FD1FD6;
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.solicitar-orcamento a:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+/*  FINAL SECTION ORÇAMENTO */
+/* INICIO SECTION CONTATO */
+.contato {
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.contato .text {
+    margin-bottom: 100px;
+    max-width: 80%;
+}
+
+.contato .container {
+    display: flex;
+    max-width: 90%;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.contato .container form {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    text-align: left;
+    gap: 20px;
+}
+
+.contato .container form label {
+    font-weight: 600;
+}
+
+.contato .container form input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(150, 150, 150);
+}
+
+.contato .container form textarea {
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(150, 150, 150);
+}
+
+.contato .container form button {
+    padding: 15px 0px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #7901C7, #FD1FD6);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.contato .container form button:hover {
+    background: black;
+}
+
+.contato .container .outros {
+    text-align: left;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contato .container .outros .horarios {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contato .container .outros h1 {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.contato .container .outros .container-outros {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contato .container .outros .container-outros .social {
+    display: flex;
+    gap: 10px;
+}
+
+.contato .container .outros .container-outros .social img {
+    height: 50px;
+}
+/* FINAL SECTION CONTATO */
+/* INICIO FOOTER */
+footer {
+    padding: 50px 0px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer h1 {
+    font-size: 1rem;
+}
+
+footer p {
+    color: rgb(150, 150, 150);
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(150, 150, 150);
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    text-align: left;
+    border-bottom: 1px solid rgb(150, 150, 150);
+    padding: 50px 0px;
+    margin-bottom: 50px;
+    max-width: 90%;
+}
+
+footer .container .card {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* FINAL FOOTER */
+/* INICIO MEDIA QUERY */
+@media (max-width: 1000px) {
+
+    header a img {
+        height: 50px;
+    }
+
+    .logo-desktop {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .btn-abrir-menu {
+        display: block;
+    }
+
+    .hero h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    }
+
+    .hero p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    }
+
+    .hero-text {
+        max-width: 90%;
+    }
+
+    .btn-hero {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-contato {
+    padding: 10px 50px;
+    }
+
+    .btn-servicos {
+    padding: 10px 50px;
+    }
+
+    .sobre .container {
+        max-width: 70%;
+        gap: 20px;
+    }
+
+    .sobre .container img {
+        width: 350px;
+    }
+
+    .sobre .container .sobre-text .text1 h1 {
+        text-align: center;
+    }
+
+    .sobre .container .sobre-text .text2 h1 {
+        text-align: center;
+    }
+
+    .contato .text {
+        margin-bottom: 50px;
+    }
+
+    .contato .container {
+        gap: 50px;
+    }
+
+    .contato .container .outros {
+        height: 400px;
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+}
+/* FINAL MEDIA QUERY */

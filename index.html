@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="menu.js" defer></script>
+    <title>Horizon</title>
+  </head>
+  <body>
+    <header id="header">
+      <a class="logo-desktop" href="#">
+        <img src="img/Logo png.png" alt="logo horizon" />
+      </a>
+      <a class="logo-mobile" href="#">
+        <img src="img/logounica.png" alt="logo horizon" />
+      </a>
+      <nav class="menu-desktop">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Portifólio</a></li>
+          <li><a class="btn-menu" href="#">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="btn-abrir-menu" id="btn-menu">
+        <i class="bi bi-list"></i>
+      </div>
+
+      <div class="menu-mobile" id="menu-mobile">
+        <div class="btn-fechar">
+          <i class="bi bi-x-lg"></i>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Portifólio</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="overlay-menu" id="overlay-menu"></div>
+    </header>
+    <section id="particles-js" class="hero">
+      <div class="hero-text">
+          <h1>Ampliando Fronteiras Digitais</h1>
+          <p>Desenvolvemos experiências digitais que conectam marcas e clientes</p>
+          <div class="btn-hero">
+            <a class="btn-contato" href="#">Entrar em Contato</a>
+            <a class="btn-servicos" href="#">Ver Nossos Serviços</a>
+          </div>
+      </div>
+      <img src="img/VetorCima.png" />
+    </section>
+    <section class="servicos">
+      <div class="textos">
+        <h1>O que fazemos?</h1>
+        <p>Soluções digitais que impulsionam marcas</p>
+      </div>
+      <div class="container">
+        <div class="card">
+          <img src="img/Internet.png" />
+          <h2>Desenvolvimento de Sites</h2>
+          <p>
+            Sites profissionais e responsivos que convertem visitantes em
+            clientes.
+          </p>
+        </div>
+        <div class="card">
+          <img src="img/Web.png" />
+          <h2>Criação de Landing Pages</h2>
+          <p>Páginas otimizadas para gerar leads e aumentar suas conversões.</p>
+        </div>
+        <div class="card">
+          <img src="img/Increase.png" />
+          <h2>Otimização para Conversão</h2>
+          <p>
+            Estratégias para maximizar resultados e melhorar a experiência do
+            usuário.
+          </p>
+        </div>
+        <div class="card">
+          <img src="img/Wrench.png" />
+          <h2>Manutenção e Suporte</h2>
+          <p>Suporte técnico e atualizações constantes para seu projeto.</p>
+        </div>
+        <div class="card">
+          <img src="img/Database.png" />
+          <h2>Hospedagem e Domínio</h2>
+          <p>
+            Soluções completas de hospedagem com alta disponibilidade e
+            segurança.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre">
+      <div class="container">
+        <div class="sobre-text">
+          <div class="text1">
+            <h1>Quem somos?</h1>
+            <p>A Horizon nasceu da paixão por criar experiências digitais que transformam negócios. Nosso time é composto por especialistas apaixonados por tecnologia e design, dedicados a entregar soluções que superam expectativas.</p>
+            <p>Nossa missão é ampliar as fronteiras digitais dos nossos clientes, criando presença online que conecta, engaja e converte. Trabalhamos para transformar ideias em realidade, com soluções personalizadas que atendem às necessidades específicas de cada projeto.</p>
+          </div>
+          <div class="text2">
+            <h1>Tecnologia com propósito</h1>
+            <p>Acreditamos que a tecnologia deve servir a um propósito maior: conectar pessoas e impulsionar negócios. Cada linha de código que escrevemos e cada pixel que desenhamos é pensado para gerar resultados concretos.</p>
+          </div>
+        </div>
+        <img src="img/Notebook.png">
+      </div>
+    </section>
+    <section class="solicitar-orcamento">
+      <h1>Pronto para ampliar suas fronteiras digitais?</h1>
+      <p>Vamos juntos transformar sua presença online.</p>
+      <a href="#">Solicitar Orçamento</a>
+    </section>
+
+    <section class="contato">
+      <div class="text">
+        <h1>Fale Conosco</h1>
+        <p>Estamos prontos para transformar sua ideia em realidade</p>
+      </div>
+      <div class="container">
+        <form action="https://formsubmit.co/joaogabrielrs2007@gmail.com" method="POST" class="formulario">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Como podemos ajudar?" required></textarea>
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+          <button type="submit">Enviar Mensagem</button>
+        </form>
+        <div class="outros">
+          <div class="container-outros">
+            <h1>Outras formas de contato</h1>
+            <div class="social">
+              <img src="img/Whatsapp.png">
+              <div class="textos">
+                <h1>WhatsApp</h1>
+                <p>(51) 98765-4321</p>
+              </div>
+            </div>
+            <div class="social">
+              <img src="img/Instagram.png">
+              <div class="textos">
+                <h1>Instagram</h1>
+                <p>@horizon.digitalweb</p>
+              </div>
+            </div>
+            <div class="social">
+              <img src="img/Linkedin.png">
+              <div class="textos">
+                <h1>Linkedin</h1>
+                <p>/company/horizon-digital</p>
+              </div>
+            </div>
+          </div>
+          <div class="horarios">
+            <h1>Horário de atendimento</h1>
+            <p>Segunda a Sexta: 9h às 18h</p>
+            <p>Sábado: 9h às 13h</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+
+        <div class="card">
+          <h1>Horizon</h1>
+          <p>Ampliando fronteiras digitais e criando experiências que conectam marcas e pessoas.</p>
+          <div>
+            <a href="#">
+              <img src="img/Instagram-white.png">
+            </a>
+            <a href="#">
+              <img src="img/WhatsApp-white.png">
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h1>Links Rápidos</h1>
+          <a href="#">Home</a>
+          <a href="#">Serviços</a>
+          <a href="#">Sobre</a>
+          <a href="#">Portifólio</a>
+          <a href="#">Contato</a>
+        </div>
+
+        <div class="card">
+          <h1>Serviços</h1>
+          <p>Desenvolvimento de Sites</p>
+          <p>Criação de Landig Pages</p>
+          <p>Otimização para Conversão</p>
+          <p>Manutenção e Suporte</p>
+          <p>Hospedagem e Domínio</p>
+        </div>
+
+        <div class="card">
+          <h1>Contato</h1>
+          <p>contato@gmail.com</p>
+          <p>(51) 98765-4321</p>
+          <p>Porto Alegre, RS</p>
+        </div>
+
+      </div>
+      <p>© 2025 Horizon. Todos os direiros reservados.</p>
+    </footer>
+
+    <script src="particles.min.js"></script>
+    <script>
+      particlesJS(
+        {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 150,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}
+      );
+    </script>
+  </body>
+</html>
