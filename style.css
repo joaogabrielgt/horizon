@@ -142,7 +142,7 @@ header a img {
 /* INICIO HERO SECTION */
 .hero {
     background-color: black;
-    height: 99vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -257,7 +257,6 @@ header a img {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 0px;
     margin-bottom: 50px;
 }
 
@@ -278,7 +277,6 @@ header a img {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    text-align: justify;
 }
 
 .sobre .container .sobre-text .text1 h1 {
@@ -541,6 +539,10 @@ footer .container .card {
 
     .sobre .container img {
         width: 350px;
+    }
+
+    .sobre .container .sobre-text {
+        text-align: center;
     }
 
     .sobre .container .sobre-text .text1 h1 {
